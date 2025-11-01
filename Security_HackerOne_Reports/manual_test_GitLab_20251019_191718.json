@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-19T19:17:18.997299",
+  "target": "GitLab",
+  "url": "https://gitlab.com",
+  "test_type": "deep_manual_testing",
+  "findings": [
+    {
+      "type": "GraphQL Authorization Bypass",
+      "test_name": "Project Access",
+      "query": "{\"query\": \"{projects {nodes {id name visibility}}}\"}",
+      "response": "{\"data\": {\"projects\": {\"nodes\": [{\"id\": \"gid://gitlab/Project/75443331\", \"name\": \"TpGit\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443322\", \"name\": \"learn-gitlab-app\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443260\", \"name\": \"card\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443259\", \"name\": \"mathgame\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443217\", \"name\": \"repstore\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443211\", \"",
+      "severity": "HIGH",
+      "description": "GraphQL endpoint returned data for Project Access without proper authentication"
+    }
+  ],
+  "total_findings": 1
+}

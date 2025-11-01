@@ -1,0 +1,35 @@
+id: trip-phish
+
+info:
+  name: trip phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A trip phishing website was detected
+  reference:
+    - https://trip.com
+  metadata:
+    max-request: 1
+  tags: phishing,trip,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Trip.com: Book cheap flights, hotels, car rentals, trains and more'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"trip.com")'
+# digest: 4b0a00483046022100929e0181827cea62fc1f36b4f54ae903a6a99ac2c92d5c2cbbffec068a8d2c2402210096426c9745f0fae4fb4da2d040fd86f26d06e43a73f686f7d295b2720e919111:922c64590222798bb761d5b6d8e72950

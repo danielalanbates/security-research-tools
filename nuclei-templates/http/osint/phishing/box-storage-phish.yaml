@@ -1,0 +1,35 @@
+id: box-phish
+
+info:
+  name: box phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A box phishing website was detected
+  reference:
+    - https://box.com
+  metadata:
+    max-request: 1
+  tags: phishing,box-storage,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Secure File Sharing, Storage, and Collaboration | Box'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"box.com")'
+# digest: 4b0a00483046022100ce3eaf0c83e8d9e67205434410c6c2884761c5813a02e67bc00aaca034759bf30221009f797dbe0e4044afbd559a8125d621cf37934ce1287b75037451a35e8f0f01ea:922c64590222798bb761d5b6d8e72950

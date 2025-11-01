@@ -1,0 +1,32 @@
+id: veritas-netbackup-panel
+
+info:
+  name: Veritas NetBackup OpsCenter Analytics Login - Detect
+  author: rxerium
+  severity: info
+  description: |
+    A Veritas NetBackup OpsCenter Analytics page was detected.
+  reference:
+    - https://www.veritas.com/
+  metadata:
+    verified: true
+    max-request: 1
+    shodan-query: html:"Veritas NetBackup OpsCenter Analytics"
+  tags: panel,veritas,netbackup,opscenter,login,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/opscenter/"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '<title>Veritas NetBackup OpsCenter Analytics'
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a0047304502210098cbaf77a4ad2a19ed6dd10ead2c068406d19857b7c5bcafd408a93ca1f6f8c1022079240b548c3ab0dee82dffd5ba16f2dec02c47c4161020db657a0fd463c08c3e:922c64590222798bb761d5b6d8e72950

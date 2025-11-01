@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-19T19:27:31.831926",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "target": "GitHub",
+      "url": "https://api.github.com",
+      "successful_requests": 10,
+      "description": "10 rapid requests succeeded without rate limiting"
+    },
+    {
+      "type": "GraphQL Information Disclosure",
+      "severity": "MEDIUM",
+      "target": "GitLab",
+      "url": "https://gitlab.com/api/graphql",
+      "sensitive_types": [
+        "Admin",
+        "Secret",
+        "Token"
+      ],
+      "description": "GraphQL introspection exposes sensitive types: Admin, Secret, Token"
+    }
+  ],
+  "total_findings": 2
+}

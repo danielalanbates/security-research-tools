@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-19T19:36:06.030165",
+  "target": "GitLab",
+  "test_type": "authenticated_manual_testing",
+  "authenticated": false,
+  "findings": [
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "description": "GraphQL endpoint accepts 20+ rapid requests without rate limiting",
+      "successful_requests": 20
+    }
+  ],
+  "total_findings": 1
+}

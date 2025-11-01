@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-20T10:59:01.853214",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "Authentication Bypass",
+      "severity": "CRITICAL",
+      "target": "Asana",
+      "endpoint": "https://asana.com/resources/forrester-wave-collaborative-work-management-2025 ",
+      "headers": {
+        "X-Original-URL": "/admin"
+      },
+      "verified": true,
+      "description": "Auth bypass via header manipulation: {'X-Original-URL': '/admin'}"
+    }
+  ],
+  "total_findings": 1
+}

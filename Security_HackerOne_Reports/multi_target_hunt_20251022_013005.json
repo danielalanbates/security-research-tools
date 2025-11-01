@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-22T01:30:05.324558",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 106,
+  "findings": [
+    {
+      "type": "Subdomain Takeover",
+      "severity": "Critical",
+      "target": "Hootsuite",
+      "subdomain": "aperture-ui-external-hootweb-staging.hootsuite.com",
+      "cname": "d5qfq6zrb6uos.cloudfront.net",
+      "service": "AWS CloudFront",
+      "bounty_range": "$500-$2000",
+      "hackerone_report": "# Subdomain Takeover Vulnerability - aperture-ui-external-hootweb-staging.hootsuite.com\n\n## Summary\nThe subdomain `aperture-ui-external-hootweb-staging.hootsuite.com` has a CNAME record pointing to `d5qfq6zrb6uos.cloudfront.net` (AWS CloudFront), but the resource is unclaimed. This allows an attacker to claim the resource and serve malicious content under your domain.\n\n## Severity\n**Critical** - Subdomain takeover allows attackers to:\n- Serve phishing pages under your domain\n- Steal cookies and session tokens\n- Bypass CSP and CORS policies\n- Damage brand reputation\n\n## Reproduction Steps\n\n1. Check DNS CNAME record:\n```bash\ndig aperture-ui-external-hootweb-staging.hootsuite.com CNAME\n```\n\nOutput shows: `d5qfq6zrb6uos.cloudfront.net`\n\n2. Visit the subdomain:\n```bash\ncurl -I https://aperture-ui-external-hootweb-staging.hootsuite.com\n```\n\nResponse shows the service is unclaimed.\n\n3. Claim the resource on AWS CloudFront:\n   - Create account on AWS CloudFront\n   - Claim the resource name from the CNAME\n   - Verify you can now serve content under `aperture-ui-external-hootweb-staging.hootsuite.com`\n\n## Impact\n- Full control over subdomain content\n- Ability to steal credentials via phishing\n- Cookie theft (if cookies are scoped to parent domain)\n- Bypass of security policies (CSP, CORS)\n- Brand damage and loss of customer trust\n\n## Mitigation\n1. Remove the CNAME record for `aperture-ui-external-hootweb-staging.hootsuite.com` from your DNS configuration\n2. OR claim the resource on AWS CloudFront yourself\n3. Implement monitoring for dangling DNS records\n\n## Supporting Evidence\n- DNS CNAME: `d5qfq6zrb6uos.cloudfront.net`\n- Service: AWS CloudFront\n- Discovered: 2025-10-22T01:06:28.420650\n\n## Expected Bounty Range\n$500-$2000",
+      "verified": true,
+      "poc_file": "/Users/daniel/Documents/aicode/hackerone/pocs/poc_Hootsuite_Subdomain_Takeover_20251022_013005.md"
+    }
+  ],
+  "total_findings": 1
+}

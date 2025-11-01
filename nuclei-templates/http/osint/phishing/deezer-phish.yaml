@@ -1,0 +1,35 @@
+id: deezer-phish
+
+info:
+  name: deezer phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A deezer phishing website was detected
+  reference:
+    - https://deezer.com
+  metadata:
+    max-request: 1
+  tags: phishing,deezer,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Deezer | Listen to music | Online music streaming platform'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"deezer.com")'
+# digest: 490a004630440220332c154d311866a937107339cac58d81788603a3d9fb1d13cc3e3497458a42670220785175f0f80b46be731192a81b830f0c5964aff25115a6f43dbca835c8ba4875:922c64590222798bb761d5b6d8e72950

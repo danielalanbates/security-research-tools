@@ -1,0 +1,84 @@
+id: soa-detect
+
+info:
+  name: SOA Record Service - Detection
+  author: rxerium
+  severity: info
+  description: |
+    Detects which domain provider a domain is using, detected through SOA records
+  reference:
+    - https://www.cloudflare.com/learning/dns/dns-records/dns-soa-record/
+  metadata:
+    verified: true
+    max-request: 1
+  tags: dns,soa
+
+dns:
+  - name: "{{FQDN}}"
+
+    type: SOA
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        name: "cloudflare"
+        words:
+          - "dns.cloudflare.com"
+
+      - type: word
+        name: "amazon-web-services"
+        words:
+          - "awsdns"
+
+      - type: word
+        name: "akamai"
+        words:
+          - "hostmaster.akamai.com"
+
+      - type: word
+        name: "azure"
+        words:
+          - "azure-dns.com"
+
+      - type: word
+        name: "ns1"
+        words:
+          - "nsone.net"
+
+      - type: word
+        name: "verizon"
+        words:
+          - "verizon.com"
+
+      - type: word
+        name: "google-cloud-platform"
+        words:
+          - "googledomains.com"
+          - "google.com"
+
+      - type: word
+        name: "alibaba"
+        words:
+          - "alibabadns.com"
+
+      - type: word
+        name: "safeway"
+        words:
+          - "safeway.com"
+
+      - type: word
+        name: "mark-monitor"
+        words:
+          - "markmonitor.com"
+          - "markmonitor.zone"
+
+      - type: word
+        name: "hetznet"
+        words:
+          - "hetzner.com"
+
+      - type: word
+        name: "edge-cast"
+        words:
+          - "edgecastdns.net"
+# digest: 4b0a00483046022100facc5a9fc5a999a1163121f93642b462f4f72ddff5328dc43fa1039f180f61dc0221009e710cd34f9ed9f2ae9083c0b68043266e2d036425f16e37d58d1efb63e011e1:922c64590222798bb761d5b6d8e72950

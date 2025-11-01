@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-20T13:34:27.948710",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/admin",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/token",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/profile",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/v2/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/account",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/rest/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/v1/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/search",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/user",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/login",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/users",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/auth",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/graphql",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Vanilla Forums",
+      "endpoint": "https://vanillaforums.com/api/settings",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    }
+  ],
+  "total_findings": 15
+}

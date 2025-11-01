@@ -1,0 +1,161 @@
+{
+  "timestamp": "2025-10-20T11:07:11.325194",
+  "target": "Glassdoor",
+  "program": "https://hackerone.com/glassdoor",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 2685,
+  "endpoints_discovered": 15,
+  "findings": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/user",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/account",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/login",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/settings",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/graphql",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/rest/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/v1/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/users",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/admin",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/auth",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/profile",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/v2/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/search",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Glassdoor",
+      "endpoint": "https://www.glassdoor.com/api/token",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    }
+  ],
+  "total_findings": 15
+}

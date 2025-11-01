@@ -1,0 +1,21 @@
+{
+  "timestamp": "2025-10-20T21:08:13.206544",
+  "target": "Plex",
+  "program": "https://hackerone.com/plex",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 451,
+  "endpoints_discovered": 2,
+  "findings": [
+    {
+      "type": "CORS Misconfiguration",
+      "severity": "MEDIUM",
+      "target": "Plex",
+      "endpoint": "https://www.plex.tv/wp-json/wp/v2/pages/20856",
+      "verified": true,
+      "claude_confidence": "HIGH",
+      "description": "CORS misconfiguration allowing arbitrary origins with credentials enabled can allow malicious websites to make authenticated requests to the WordPress API on behalf of logged-in users. This could lead to unauthorized data access or actions if the API endpoints contain sensitive information or accept state-changing operations.",
+      "exploitation_steps": "1. Host malicious JavaScript on evil.com that makes XHR requests to https://www.plex.tv/wp-json/wp/v2/pages/20856 with credentials. 2. When a logged-in Plex user visits the malicious site, their browser will send the request with their session cookies. 3. The misconfigured CORS policy will allow the malicious site to read the response, potentially exposing sensitive data or allowing unauthorized API calls."
+    }
+  ],
+  "total_findings": 1
+}

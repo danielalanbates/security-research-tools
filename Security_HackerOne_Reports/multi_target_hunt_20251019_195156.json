@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-10-19T19:51:56.297186",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "Open Redirect",
+      "severity": "MEDIUM",
+      "target": "Rocket.Chat",
+      "url": "https://rocket.chat?redirect=https://evil.com",
+      "redirect_to": "https://www.rocket.chat/?redirect=https://evil.com",
+      "description": "Open redirect via redirect parameter allows phishing attacks"
+    },
+    {
+      "type": "Open Redirect",
+      "severity": "MEDIUM",
+      "target": "Plex",
+      "url": "https://www.plex.tv?redirect=https://evil.com",
+      "redirect_to": "https://www.plex.tv/?redirect=https%3A%2F%2Fevil.com",
+      "description": "Open redirect via redirect parameter allows phishing attacks"
+    }
+  ],
+  "total_findings": 2
+}

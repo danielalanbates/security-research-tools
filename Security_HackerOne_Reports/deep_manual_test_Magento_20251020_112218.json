@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-20T11:22:18.158565",
+  "target": "Magento",
+  "program": "https://hackerone.com/magento",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 3196,
+  "endpoints_discovered": 16,
+  "findings": [
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/v2//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    }
+  ],
+  "total_findings": 1
+}

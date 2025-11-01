@@ -1,0 +1,134 @@
+{
+  "timestamp": "2025-10-20T14:05:35.660069",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/user/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/profile/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/users/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/token/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/account/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/admin/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/v1//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/rest/api//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/search/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/settings/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/v2//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/auth/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api/login/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Trello",
+      "endpoint": "https://trello.com/api//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    }
+  ],
+  "total_findings": 14
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-10-19T20:22:44.335230",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "CORS Misconfiguration",
+      "severity": "HIGH",
+      "target": "GitBook",
+      "url": "https://api.gitbook.com",
+      "allow_origin": "*",
+      "allow_credentials": "true",
+      "description": "CORS policy allows arbitrary origins with credentials - enables data theft"
+    },
+    {
+      "type": "Open Redirect",
+      "severity": "MEDIUM",
+      "target": "Plex",
+      "url": "https://www.plex.tv?redirect=https://evil.com",
+      "redirect_to": "https://www.plex.tv/?redirect=https%3A%2F%2Fevil.com",
+      "description": "Open redirect via redirect parameter allows phishing attacks"
+    },
+    {
+      "type": "Open Redirect",
+      "severity": "MEDIUM",
+      "target": "Rocket.Chat",
+      "url": "https://rocket.chat?redirect=https://evil.com",
+      "redirect_to": "https://www.rocket.chat/?redirect=https://evil.com",
+      "description": "Open redirect via redirect parameter allows phishing attacks"
+    }
+  ],
+  "total_findings": 3
+}

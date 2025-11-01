@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-19T19:37:52.544351",
+  "target": "GitLab",
+  "url": "https://gitlab.com",
+  "test_type": "deep_manual_testing",
+  "findings": [
+    {
+      "type": "GraphQL Authorization Bypass",
+      "test_name": "Project Access",
+      "query": "{\"query\": \"{projects {nodes {id name visibility}}}\"}",
+      "response": "{\"data\": {\"projects\": {\"nodes\": [{\"id\": \"gid://gitlab/Project/75443525\", \"name\": \"inventory management\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443506\", \"name\": \"hueta\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443500\", \"name\": \"practica grupal\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443495\", \"name\": \"Capstone-Biblioteca-Web-Dev\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443466\", \"name\": \"asg-app-k8s\", \"visibility\": \"public\"}, {\"id",
+      "severity": "HIGH",
+      "description": "GraphQL endpoint returned data for Project Access without proper authentication"
+    }
+  ],
+  "total_findings": 1
+}

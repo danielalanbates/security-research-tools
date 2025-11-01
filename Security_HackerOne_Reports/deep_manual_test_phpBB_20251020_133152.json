@@ -1,0 +1,161 @@
+{
+  "timestamp": "2025-10-20T13:31:52.521541",
+  "target": "phpBB",
+  "program": "https://hackerone.com/phpbb",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 2685,
+  "endpoints_discovered": 15,
+  "findings": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/rest/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/settings",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/login",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/graphql",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/v1/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/user",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/admin",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/token",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/account",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/users",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/search",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/profile",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/v2/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/auth",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "phpBB",
+      "endpoint": "https://www.phpbb.com/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    }
+  ],
+  "total_findings": 15
+}

@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-10-20T12:44:45.947344",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/admin",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/graphql",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/user",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/v1/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/v2/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/login",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/token",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/auth",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/rest/api/",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/users",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/settings",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/search",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/profile",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "severity": "HIGH",
+      "target": "Canva",
+      "endpoint": "https://www.canva.com/api/account",
+      "parameter": "q",
+      "payload": "javascript:alert('XSS')",
+      "verified": true,
+      "description": "Reflected XSS via q - unescaped HTML injection"
+    }
+  ],
+  "total_findings": 15
+}

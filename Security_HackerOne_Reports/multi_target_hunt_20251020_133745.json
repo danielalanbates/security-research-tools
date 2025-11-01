@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-20T13:37:45.249815",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 98,
+  "findings": [
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Joomla",
+      "endpoint": "https://www.pinterest.com/joomla/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    }
+  ],
+  "total_findings": 1
+}

@@ -1,0 +1,44 @@
+# API Keys and Secrets
+.env
+.env.local
+.env.*.local
+config.yml
+credentials.json
+secrets.yml
+
+# Nuclei templates are OK to commit (they're test patterns)
+# But exclude any actual scan results or credentials
+results/
+output/
+scans/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive test data
+test-credentials/
+real-keys/

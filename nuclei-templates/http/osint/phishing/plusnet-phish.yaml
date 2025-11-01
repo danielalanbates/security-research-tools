@@ -1,0 +1,35 @@
+id: plusnet-phish
+
+info:
+  name: plusnet phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A plusnet phishing website was detected
+  reference:
+    - https://plus.net
+  metadata:
+    max-request: 1
+  tags: phishing,plusnet,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'Multi-Award Winner with Even Faster UK Broadband | Plusnet'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"plus.net")'
+# digest: 4a0a00473045022075f887781acc1bed9b78f7d50ebb98929c0b68395cce4ea0f33ca40d8d947ded022100d90090d43f2eb5abf7645e98f9dee2532c7cbd14dd7c56d6499c26b6af0a9bcb:922c64590222798bb761d5b6d8e72950

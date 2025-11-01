@@ -1,0 +1,36 @@
+id: pronote-panel
+
+info:
+  name: PRONOTE Login Panel - Detect
+  author: righettod
+  severity: info
+  description: |
+    PRONOTE products was detected.
+  reference:
+    - https://www.index-education.com/fr/logiciel-gestion-vie-scolaire.php
+  metadata:
+    max-request: 1
+    shodan-query: http.title:"PRONOTE"
+  tags: panel,pronote,login
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+
+    matchers:
+      - type: dsl
+        dsl:
+          - 'status_code == 200'
+          - 'contains_any(to_lower(body), "<title>pronote", "content=\"pronote\"")'
+        condition: and
+
+    extractors:
+      - type: regex
+        part: header
+        group: 1
+        regex:
+          - '(?i)Server:\s+PRONOTE\s+([0-9.\s\-]+)'
+# digest: 490a004630440220303e950cd19eb481420e94503373620c227d41781ec86422a69fbf66d7b8163402200acdbcf02e5eedc7b57a8f0a6080c3098d368e3b38e8718f0dce46fa8fd3e775:922c64590222798bb761d5b6d8e72950

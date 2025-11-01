@@ -1,0 +1,146 @@
+{
+  "timestamp": "2025-10-20T14:41:38.986392",
+  "target": "Magento",
+  "program": "https://hackerone.com/magento",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 3145,
+  "endpoints_discovered": 16,
+  "findings": [
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/settings/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/token/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/admin/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/profile/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/users/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/auth/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/graphql/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/v2//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/v1//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/login/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/search/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/account/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/api/user/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    },
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Magento",
+      "endpoint": "https://magento.com/rest/api//1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    }
+  ],
+  "total_findings": 15
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-19T19:45:09.893154",
+  "target": "GitLab",
+  "url": "https://gitlab.com",
+  "test_type": "deep_manual_testing",
+  "findings": [
+    {
+      "type": "GraphQL Authorization Bypass",
+      "test_name": "Project Access",
+      "query": "{\"query\": \"{projects {nodes {id name visibility}}}\"}",
+      "response": "{\"data\": {\"projects\": {\"nodes\": [{\"id\": \"gid://gitlab/Project/75443655\", \"name\": \"\\u6210\\u4eba\\u5bfc\\u822a - \\u94fe\\u63a5\\u5730\\u5740\\uff1a181.run - \\u4e30\\u6ee1\\u5c11\\u5987\\u88ab\\u7c97\\u5927\\u731b\\u70c8\\u8fdb\\u4eba\\u9ad8\\u6e05 - \\u4e45\\u4e45\\u4eba\\u5348\\u591c\\u4e9a\\u6d32\\u7cbe\\u54c1\\u65e0\\u7801\\u533a - 881\\u6bd4\\u9e2dXS1020 SALA3udd61\", \"visibility\": \"public\"}, {\"id\": \"gid://gitlab/Project/75443653\", \"name\": \"\\u6210\\u4eba\\u5bfc\\u822a - \\u94fe\\u63a5\\u5730\\u5740\\uff1a183.run - \\u56fd\\u4ea7\\u5973\\",
+      "severity": "HIGH",
+      "description": "GraphQL endpoint returned data for Project Access without proper authentication"
+    }
+  ],
+  "total_findings": 1
+}

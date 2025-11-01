@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-10-19T19:35:16.027025",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "target": "GitHub",
+      "url": "https://api.github.com",
+      "successful_requests": 10,
+      "description": "10 rapid requests succeeded without rate limiting"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "target": "Snapchat",
+      "url": "https://www.snapchat.com",
+      "successful_requests": 10,
+      "description": "10 rapid requests succeeded without rate limiting"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "target": "Shopify",
+      "url": "https://www.shopify.com",
+      "successful_requests": 10,
+      "description": "10 rapid requests succeeded without rate limiting"
+    }
+  ],
+  "total_findings": 3
+}

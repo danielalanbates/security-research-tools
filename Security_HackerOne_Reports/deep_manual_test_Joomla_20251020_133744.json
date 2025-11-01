@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-20T13:37:44.883984",
+  "target": "Joomla",
+  "program": "https://hackerone.com/joomla",
+  "test_type": "deep_manual_testing",
+  "tests_performed": 606,
+  "endpoints_discovered": 3,
+  "findings": [
+    {
+      "type": "IDOR - Insecure Direct Object Reference",
+      "severity": "HIGH",
+      "target": "Joomla",
+      "endpoint": "https://www.pinterest.com/joomla/1",
+      "user_id": 1,
+      "verified": true,
+      "description": "Can access user 1 data without authorization"
+    }
+  ],
+  "total_findings": 1
+}

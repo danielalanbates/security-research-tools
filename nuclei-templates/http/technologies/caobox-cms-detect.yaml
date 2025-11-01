@@ -1,0 +1,44 @@
+id: caobox-cms-detect
+
+info:
+  name: Caobox CMS - Detect
+  author: Chirag Mistry
+  severity: info
+  description: |
+    Detects instances of Caobox CMS based on unique fingerprints and identifiers.
+  metadata:
+    verified: true
+    shodan-query:
+      - http.component:"Caobox"
+      - http.component:"caobox"
+      - cpe:"cpe:2.3:a:caobox:caobox"
+  tags: detect,caobox,cms,tech
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    payloads:
+      paths:
+        - "/"
+        - "/admin/"
+        - "/index.php"
+        - "/admin/login.php"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        words:
+          - "Caobox CMS"
+          - "powered by Caobox"
+          - "Welcome to Caobox"
+          - "Caobox version"
+        condition: or
+
+      - type: regex
+        regex:
+          - "(?i)caobox"
+          - "(?i)caobox\\s+(v[0-9.]+)"
+          - "(?i)<title>Caobox CMS"
+# digest: 4a0a00473045022027e23efc416eb039aaaf8d0792f008d5603738f401d1f64e767b804b43947677022100f9bde379ab1f83ae94e20c9a81bdab8cfbf56f526902a60683b7b37ac0fd8007:922c64590222798bb761d5b6d8e72950

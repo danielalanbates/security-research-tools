@@ -1,0 +1,35 @@
+id: o2-mobile-phish
+
+info:
+  name: o2 phishing Detection
+  author: rxerium
+  severity: info
+  description: |
+    A o2 phishing website was detected
+  reference:
+    - https://o2.co.uk
+  metadata:
+    max-request: 1
+  tags: phishing,o2,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - 'O2 | Phone, SIM &amp; Tech Deals - See What You Can Do'
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"o2.co.uk")'
+# digest: 4b0a0048304602210091b2ca087a105d58d65ea6887de8e7a23974b04a20a009be30b5f560abc814c3022100fdf75394fad921143738d904bd90f18436dc9d2a15f41aec7e27ad41e4c15e3d:922c64590222798bb761d5b6d8e72950

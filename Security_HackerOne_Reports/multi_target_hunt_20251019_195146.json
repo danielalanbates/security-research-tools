@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-19T19:51:46.558144",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "CORS Misconfiguration",
+      "severity": "HIGH",
+      "target": "GitBook",
+      "url": "https://api.gitbook.com",
+      "allow_origin": "*",
+      "allow_credentials": "true",
+      "description": "CORS policy allows arbitrary origins with credentials - enables data theft"
+    }
+  ],
+  "total_findings": 1
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-19T19:37:01.421025",
+  "target": {
+    "name": "Test Site (Legal)",
+    "url": "http://testphp.vulnweb.com",
+    "type": "test_site",
+    "allowed_testing": true,
+    "reward": "Educational"
+  },
+  "finding": {
+    "url": "http://testphp.vulnweb.com/search.php?test=search",
+    "payload": "<script>alert('XSS')</script>",
+    "response_code": 200,
+    "response_preview": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLocked=\"false\" -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-2\">\n\n<!-- InstanceBeginEditable name=\"document_title_rgn\" -->\n<title>search</title>\n<!-- InstanceEndEditable -->\n<link rel=\"stylesheet\" href=\"style.css\" type=\"text/css\">\n<!-- InstanceBeginEditable name=\"heade",
+    "vulnerability_type": "Unknown",
+    "severity": "Medium"
+  },
+  "status": "pending_review"
+}

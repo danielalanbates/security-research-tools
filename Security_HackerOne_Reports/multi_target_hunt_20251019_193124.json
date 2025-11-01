@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-10-19T19:31:24.912278",
+  "test_type": "multi_target_hunting",
+  "targets_tested": 8,
+  "findings": [
+    {
+      "type": "GraphQL Information Disclosure",
+      "severity": "MEDIUM",
+      "target": "GitLab",
+      "url": "https://gitlab.com/api/graphql",
+      "sensitive_types": [
+        "Admin",
+        "Secret",
+        "Token"
+      ],
+      "description": "GraphQL introspection exposes sensitive types: Admin, Secret, Token"
+    },
+    {
+      "type": "Missing Rate Limiting",
+      "severity": "MEDIUM",
+      "target": "Snapchat",
+      "url": "https://www.snapchat.com",
+      "successful_requests": 10,
+      "description": "10 rapid requests succeeded without rate limiting"
+    }
+  ],
+  "total_findings": 2
+}
