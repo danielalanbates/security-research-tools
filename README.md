@@ -107,3 +107,13 @@ See [LICENSE](../LICENSE) file for details.
 **Disclaimer**: The author is not responsible for misuse of these tools. Always obtain proper authorization before testing any systems.
 
 **Last Updated**: January 2025
+
+## License & Commercial Use
+
+- **Personal projects:** Free to download, study, and modify for your own hobby, research, or learning needs.
+- **Attribution required:** Include “Built with BatesAI software by Daniel Bates (https://batesai.org)” anywhere you showcase or distribute this work.
+- **Organizations & monetization:** Any company, client, school, nonprofit, or government project must either buy a commercial license (daniel@batesai.org) or share 10% of gross revenue from every sale that includes this software.
+- **Compliance:** Missing attribution, skipping payments, or sublicensing under new terms immediately sunsets your access until the issue is fixed.
+
+Read the full “BatesAI Personal & Revenue Share License v1.0” in LICENSE.
+
